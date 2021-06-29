@@ -37,7 +37,7 @@ export function Room() {
         name: user.name,
         avatar: user.avatar
       },
-      isHighLithed: false,
+      isHighLighted: false,
       isAnswered: false
     }
 
@@ -96,7 +96,7 @@ export function Room() {
             content={question.content}
             author={question.author}
             isAnswered={question.isAnswered}
-            isHighLithed={question.isHighLithed}
+            isHighLighted={question.isHighLighted}
             >
               { !question.isAnswered && (
                 <button

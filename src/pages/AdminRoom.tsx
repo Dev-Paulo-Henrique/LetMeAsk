@@ -43,7 +43,7 @@ export function AdminRoom() {
 
   async function handleHighLigthQuestion(questionId: string) {
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
-      isHighLigthed: true
+      isHighLighted: true
     })
   }
   
@@ -72,7 +72,7 @@ export function AdminRoom() {
             content={question.content}
             author={question.author}
             isAnswered={question.isAnswered}
-            isHighLithed={question.isHighLithed}
+            isHighLighted={question.isHighLighted}
             >
              { !question.isAnswered && (
                <>
